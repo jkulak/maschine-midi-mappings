@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <ni-controller-midi-map version="1">
 
-  <midi-map name="maschine-mk2" port="internal" type="MaschineMK2">
+  <midi-map name="Dj Kuba MaschineMKII" port="internal" type="MaschineMK2">
     <velocitycurve>3</velocitycurve>
     <controls>
       <button id="Control">
