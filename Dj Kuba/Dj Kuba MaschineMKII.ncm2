@@ -555,7 +555,7 @@
       </button>
     </controls>
     <pages>
-      <current_index>0</current_index>
+      <current_index>1</current_index>
       <page name="Page 1">
         <button id="Button1">
           <controller>46</controller>
@@ -704,6 +704,7 @@
       </page>
       <page name="Page 2">
         <button id="Button1">
+          <name>FX 1 ON</name>
           <controller>54</controller>
           <channel>0</channel>
           <off>0</off>
@@ -712,6 +713,7 @@
           <reaction>ondown</reaction>
         </button>
         <button id="Button2">
+          <name>BTN 1</name>
           <controller>55</controller>
           <channel>0</channel>
           <off>0</off>
@@ -720,6 +722,7 @@
           <reaction>ondown</reaction>
         </button>
         <button id="Button3">
+          <name>BTN 2</name>
           <controller>56</controller>
           <channel>0</channel>
           <off>0</off>
@@ -728,6 +731,7 @@
           <reaction>ondown</reaction>
         </button>
         <button id="Button4">
+          <name>BTN 3</name>
           <controller>57</controller>
           <channel>0</channel>
           <off>0</off>
@@ -736,6 +740,7 @@
           <reaction>ondown</reaction>
         </button>
         <button id="Button5">
+          <name>FX 2 ON</name>
           <controller>58</controller>
           <channel>0</channel>
           <off>0</off>
@@ -744,6 +749,7 @@
           <reaction>ondown</reaction>
         </button>
         <button id="Button6">
+          <name>BTN 1</name>
           <controller>59</controller>
           <channel>0</channel>
           <off>0</off>
@@ -752,6 +758,7 @@
           <reaction>ondown</reaction>
         </button>
         <button id="Button7">
+          <name>BTN 2</name>
           <controller>60</controller>
           <channel>0</channel>
           <off>0</off>
@@ -760,6 +767,7 @@
           <reaction>ondown</reaction>
         </button>
         <button id="Button8">
+          <name>BTN 3</name>
           <controller>61</controller>
           <channel>0</channel>
           <off>0</off>
@@ -768,6 +776,7 @@
           <reaction>ondown</reaction>
         </button>
         <knob id="Knob1">
+          <name>WER/DRY</name>
           <controller>22</controller>
           <channel>0</channel>
           <min>0</min>
@@ -778,6 +787,7 @@
           <bipolar>off</bipolar>
         </knob>
         <knob id="Knob2">
+          <name>Knob 1</name>
           <controller>23</controller>
           <channel>0</channel>
           <min>0</min>
@@ -788,6 +798,7 @@
           <bipolar>off</bipolar>
         </knob>
         <knob id="Knob3">
+          <name>Knob 2</name>
           <controller>24</controller>
           <channel>0</channel>
           <min>0</min>
@@ -798,6 +809,7 @@
           <bipolar>off</bipolar>
         </knob>
         <knob id="Knob4">
+          <name>Knob 3</name>
           <controller>25</controller>
           <channel>0</channel>
           <min>0</min>
@@ -808,6 +820,7 @@
           <bipolar>off</bipolar>
         </knob>
         <knob id="Knob5">
+          <name>WET/DRY</name>
           <controller>26</controller>
           <channel>0</channel>
           <min>0</min>
@@ -818,6 +831,7 @@
           <bipolar>off</bipolar>
         </knob>
         <knob id="Knob6">
+          <name>Knob 1</name>
           <controller>27</controller>
           <channel>0</channel>
           <min>0</min>
@@ -828,6 +842,7 @@
           <bipolar>off</bipolar>
         </knob>
         <knob id="Knob7">
+          <name>Knob 2</name>
           <controller>28</controller>
           <channel>0</channel>
           <min>0</min>
@@ -838,6 +853,7 @@
           <bipolar>off</bipolar>
         </knob>
         <knob id="Knob8">
+          <name>Knob 3</name>
           <controller>29</controller>
           <channel>0</channel>
           <min>0</min>
@@ -850,8 +866,8 @@
       </page>
     </pages>
     <groups>
-      <current_index>0</current_index>
-      <group color="4286532096" name="Pad Page A">
+      <current_index>2</current_index>
+      <group color="4286513152" name="Pad Page A">
         <pad id="Pad1" subtype="trigger">
           <note>12</note>
           <channel>0</channel>
@@ -1110,7 +1126,7 @@
         </pad>
         <led id="Pad1H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4280680575" color-type="1"/>
           </display>
           <controller>12</controller>
           <channel>0</channel>
@@ -1140,7 +1156,7 @@
         </led>
         <led id="Pad2H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4283826303" color-type="1"/>
           </display>
           <controller>13</controller>
           <channel>0</channel>
@@ -1170,7 +1186,7 @@
         </led>
         <led id="Pad3H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4280680575" color-type="1"/>
           </display>
           <controller>14</controller>
           <channel>0</channel>
@@ -1200,7 +1216,7 @@
         </led>
         <led id="Pad4H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4283826303" color-type="1"/>
           </display>
           <controller>15</controller>
           <channel>0</channel>
