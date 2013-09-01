@@ -3791,7 +3791,7 @@
     <current_index>0</current_index>
     <display_state>
       <display_mode>4</display_mode>
-      <knob_mode>0</knob_mode>
+      <knob_mode>1</knob_mode>
     </display_state>
     <midi-map name="Dj Kuba MaschineMKII" port="internal" type="MaschineMK2">
       <velocitycurve>3</velocitycurve>
@@ -3922,14 +3922,14 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <last>0</last>
+          <last>8</last>
         </wheel>
         <button id="Push">
           <controller>102</controller>
           <channel>0</channel>
           <off>0</off>
           <on>127</on>
-          <last>0</last>
+          <last>127</last>
           <behavior>toggle</behavior>
           <reaction>ondown</reaction>
         </button>
@@ -4283,7 +4283,7 @@
           <channel>0</channel>
           <off>0</off>
           <on>127</on>
-          <last>0</last>
+          <last>127</last>
           <behavior onIfDown="on">trigger</behavior>
           <reaction>ondown</reaction>
         </button>
@@ -4292,7 +4292,7 @@
           <channel>0</channel>
           <off>0</off>
           <on>127</on>
-          <last>0</last>
+          <last>127</last>
           <behavior onIfDown="on">trigger</behavior>
           <reaction>ondown</reaction>
         </button>
@@ -4320,7 +4320,7 @@
           <channel>0</channel>
           <off>0</off>
           <on>127</on>
-          <last>0</last>
+          <last>127</last>
           <behavior onIfDown="on">trigger</behavior>
           <reaction>ondown</reaction>
         </button>
@@ -4330,7 +4330,7 @@
           <channel>0</channel>
           <off>0</off>
           <on>127</on>
-          <last>0</last>
+          <last>127</last>
           <wrap>on</wrap>
           <behavior onIfDown="on">trigger</behavior>
           <reaction>ondown</reaction>
@@ -4443,7 +4443,7 @@
             <channel>0</channel>
             <off>0</off>
             <on>127</on>
-            <last>0</last>
+            <last>127</last>
             <behavior>toggle</behavior>
             <reaction>ondown</reaction>
           </button>
@@ -4470,7 +4470,7 @@
             <channel>0</channel>
             <off>0</off>
             <on>127</on>
-            <last>0</last>
+            <last>127</last>
             <behavior>toggle</behavior>
             <reaction>ondown</reaction>
           </button>
@@ -4489,7 +4489,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>101</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4500,7 +4500,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>88</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4511,7 +4511,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>50</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4522,7 +4522,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>39</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4533,7 +4533,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>24</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4544,7 +4544,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>62</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4555,7 +4555,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>28</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4566,7 +4566,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>38</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4614,7 +4614,7 @@
             <channel>0</channel>
             <off>0</off>
             <on>127</on>
-            <last>0</last>
+            <last>127</last>
             <behavior>toggle</behavior>
             <reaction>ondown</reaction>
           </button>
@@ -4623,7 +4623,7 @@
             <channel>0</channel>
             <off>0</off>
             <on>127</on>
-            <last>0</last>
+            <last>127</last>
             <behavior>toggle</behavior>
             <reaction>ondown</reaction>
           </button>
@@ -4651,7 +4651,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>125</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4662,7 +4662,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>58</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4673,7 +4673,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4695,7 +4695,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>60</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4706,7 +4706,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>94</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4717,7 +4717,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>89</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4728,7 +4728,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>7</last>
             <range>360</range>
             <steps>20</steps>
             <bipolar>off</bipolar>
@@ -4737,7 +4737,7 @@
       </pages>
       <groups>
         <current_index>0</current_index>
-        <group color="4286532096" name="Pad Page A">
+        <group color="4278205567" name="Pad Page A">
           <pad id="Pad1" subtype="trigger">
             <note>12</note>
             <channel>0</channel>
@@ -5028,7 +5028,7 @@
           </pad>
           <led id="Pad1H">
             <display type="0">
-              <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+              <unit color-mode="0" color-off="4286516224" color-on="4280680575" color-type="1"/>
             </display>
             <controller>12</controller>
             <channel>0</channel>
@@ -5061,7 +5061,7 @@
           </led>
           <led id="Pad2H">
             <display type="0">
-              <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+              <unit color-mode="0" color-off="4286516224" color-on="4283826303" color-type="1"/>
             </display>
             <controller>13</controller>
             <channel>0</channel>
@@ -5094,14 +5094,14 @@
           </led>
           <led id="Pad3H">
             <display type="0">
-              <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+              <unit color-mode="0" color-off="4286516224" color-on="4280680575" color-type="1"/>
             </display>
             <controller>14</controller>
             <channel>0</channel>
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>101</last>
           </led>
           <led id="Pad3S">
             <display type="0">
@@ -5127,14 +5127,14 @@
           </led>
           <led id="Pad4H">
             <display type="0">
-              <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+              <unit color-mode="0" color-off="4286516224" color-on="4283826303" color-type="1"/>
             </display>
             <controller>15</controller>
             <channel>0</channel>
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>88</last>
           </led>
           <led id="Pad4S">
             <display type="0">
@@ -5167,7 +5167,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>50</last>
           </led>
           <led id="Pad5S">
             <display type="0">
@@ -5200,7 +5200,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>39</last>
           </led>
           <led id="Pad6S">
             <display type="0">
@@ -5233,7 +5233,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>24</last>
           </led>
           <led id="Pad7S">
             <display type="0">
@@ -5266,7 +5266,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>62</last>
           </led>
           <led id="Pad8S">
             <display type="0">
@@ -5299,7 +5299,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>28</last>
           </led>
           <led id="Pad9S">
             <display type="0">
@@ -5332,7 +5332,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>38</last>
           </led>
           <led id="Pad10S">
             <display type="0">
@@ -5365,7 +5365,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>125</last>
           </led>
           <led id="Pad11S">
             <display type="0">
@@ -5398,7 +5398,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>58</last>
           </led>
           <led id="Pad12S">
             <display type="0">
@@ -5431,7 +5431,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad13S">
             <display type="0">
@@ -5497,7 +5497,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>60</last>
           </led>
           <led id="Pad15S">
             <display type="0">
@@ -5530,7 +5530,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>94</last>
           </led>
           <led id="Pad16S">
             <display type="0">
@@ -5853,7 +5853,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad1S">
             <display type="0">
@@ -5919,7 +5919,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>60</last>
           </led>
           <led id="Pad3S">
             <display type="0">
@@ -5952,7 +5952,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>94</last>
           </led>
           <led id="Pad4S">
             <display type="0">
@@ -5985,7 +5985,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>89</last>
           </led>
           <led id="Pad5S">
             <display type="0">
@@ -6018,7 +6018,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>7</last>
           </led>
           <led id="Pad6S">
             <display type="0">
@@ -7100,7 +7100,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad14S">
             <display type="0">
@@ -7522,7 +7522,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad2S">
             <display type="0">
@@ -7621,7 +7621,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad5S">
             <display type="0">
@@ -7819,7 +7819,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad11S">
             <display type="0">
@@ -7852,7 +7852,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad12S">
             <display type="0">
@@ -10926,7 +10926,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>8</last>
           </led>
           <led id="Pad6S">
             <display type="0">
@@ -10959,7 +10959,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad7S">
             <display type="0">
@@ -11058,7 +11058,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad10S">
             <display type="0">
@@ -11091,7 +11091,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad11S">
             <display type="0">
@@ -11190,7 +11190,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad14S">
             <display type="0">
@@ -11223,7 +11223,7 @@
             <min>0</min>
             <max>127</max>
             <default>0</default>
-            <last>0</last>
+            <last>127</last>
           </led>
           <led id="Pad15S">
             <display type="0">
