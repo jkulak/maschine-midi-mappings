@@ -21,11 +21,12 @@
         <reaction>ondown</reaction>
       </button>
       <button id="Browse">
+        <name>M1</name>
         <controller>87</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior>toggle</behavior>
+        <behavior onIfDown="on">gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button id="Sampling">
@@ -439,6 +440,7 @@
         <reaction>ondown</reaction>
       </button>
       <button id="StepL">
+        <name>Load to A</name>
         <controller>105</controller>
         <channel>0</channel>
         <off>0</off>
@@ -447,6 +449,7 @@
         <reaction>ondown</reaction>
       </button>
       <button id="StepR">
+        <name>Load to B</name>
         <controller>106</controller>
         <channel>0</channel>
         <off>0</off>
@@ -546,6 +549,7 @@
         <reaction>ondown</reaction>
       </button>
       <button id="Mute">
+        <name>M7</name>
         <controller>119</controller>
         <channel>0</channel>
         <off>0</off>
@@ -866,7 +870,7 @@
       </page>
     </pages>
     <groups>
-      <current_index>2</current_index>
+      <current_index>0</current_index>
       <group color="4286513152" name="Pad Page A">
         <pad id="Pad1" subtype="trigger">
           <note>12</note>
