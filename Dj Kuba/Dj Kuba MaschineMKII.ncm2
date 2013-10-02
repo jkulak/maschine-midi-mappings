@@ -118,6 +118,7 @@
         <min>0</min>
         <max>127</max>
         <default>0</default>
+        <inc>12</inc>
       </wheel>
       <button id="Push">
         <controller>102</controller>
@@ -493,11 +494,12 @@
         <reaction>ondown</reaction>
       </button>
       <button id="Scene">
+        <name>M1 LOOP</name>
         <controller>112</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior>toggle</behavior>
+        <behavior onIfDown="on">gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button id="Pattern">
@@ -559,7 +561,7 @@
       </button>
     </controls>
     <pages>
-      <current_index>1</current_index>
+      <current_index>0</current_index>
       <page name="Mixer">
         <button id="Button1">
           <name>Filter </name>
@@ -882,8 +884,8 @@
       </page>
     </pages>
     <groups>
-      <current_index>3</current_index>
-      <group color="4286513152" name="BASIC">
+      <current_index>1</current_index>
+      <group color="4278205567" name="BASIC">
         <pad id="Pad1" subtype="trigger">
           <note>12</note>
           <channel>0</channel>
@@ -1621,7 +1623,7 @@
           <default>0</default>
         </led>
       </group>
-      <group color="4286532096" name="Pad Page B">
+      <group color="4286516224" name="Pad Page B">
         <pad id="Pad1" subtype="trigger">
           <note>12</note>
           <channel>7</channel>
@@ -1692,7 +1694,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure5" subtype="pressure">
@@ -1708,7 +1710,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure6" subtype="pressure">
@@ -1724,7 +1726,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure7" subtype="pressure">
@@ -1740,7 +1742,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure8" subtype="pressure">
@@ -1754,9 +1756,9 @@
           <note>20</note>
           <channel>7</channel>
           <min>0</min>
-          <max>127</max>
+          <max>2</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure9" subtype="pressure">
@@ -1772,7 +1774,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure10" subtype="pressure">
@@ -1788,7 +1790,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure11" subtype="pressure">
@@ -1804,7 +1806,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure12" subtype="pressure">
@@ -1820,7 +1822,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure13" subtype="pressure">
@@ -1836,7 +1838,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure14" subtype="pressure">
@@ -1852,7 +1854,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure15" subtype="pressure">
@@ -1868,7 +1870,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior onIfDown="on">gate</behavior>
+          <behavior>gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure16" subtype="pressure">
@@ -1880,7 +1882,7 @@
         </pad>
         <led id="Pad1H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286513152" color-type="1"/>
           </display>
           <controller>12</controller>
           <channel>0</channel>
@@ -1890,7 +1892,7 @@
         </led>
         <led id="Pad1S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>12</controller>
           <channel>1</channel>
@@ -1900,7 +1902,7 @@
         </led>
         <led id="Pad1B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>12</controller>
           <channel>2</channel>
@@ -1910,7 +1912,7 @@
         </led>
         <led id="Pad2H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286513152" color-type="1"/>
           </display>
           <controller>13</controller>
           <channel>0</channel>
@@ -1920,7 +1922,7 @@
         </led>
         <led id="Pad2S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>13</controller>
           <channel>1</channel>
@@ -1930,7 +1932,7 @@
         </led>
         <led id="Pad2B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>13</controller>
           <channel>2</channel>
@@ -1940,7 +1942,7 @@
         </led>
         <led id="Pad3H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286513152" color-type="1"/>
           </display>
           <controller>14</controller>
           <channel>0</channel>
@@ -1950,7 +1952,7 @@
         </led>
         <led id="Pad3S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>14</controller>
           <channel>1</channel>
@@ -1960,7 +1962,7 @@
         </led>
         <led id="Pad3B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>14</controller>
           <channel>2</channel>
@@ -1970,7 +1972,7 @@
         </led>
         <led id="Pad4H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286513152" color-type="1"/>
           </display>
           <controller>15</controller>
           <channel>0</channel>
@@ -1980,7 +1982,7 @@
         </led>
         <led id="Pad4S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>15</controller>
           <channel>1</channel>
@@ -1990,7 +1992,7 @@
         </led>
         <led id="Pad4B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>15</controller>
           <channel>2</channel>
@@ -2000,7 +2002,7 @@
         </led>
         <led id="Pad5H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222592" color-type="1"/>
           </display>
           <controller>16</controller>
           <channel>0</channel>
@@ -2010,7 +2012,7 @@
         </led>
         <led id="Pad5S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>16</controller>
           <channel>1</channel>
@@ -2020,7 +2022,7 @@
         </led>
         <led id="Pad5B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>16</controller>
           <channel>2</channel>
@@ -2030,7 +2032,7 @@
         </led>
         <led id="Pad6H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222712" color-type="1"/>
           </display>
           <controller>17</controller>
           <channel>0</channel>
@@ -2040,7 +2042,7 @@
         </led>
         <led id="Pad6S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>17</controller>
           <channel>1</channel>
@@ -2050,7 +2052,7 @@
         </led>
         <led id="Pad6B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>17</controller>
           <channel>2</channel>
@@ -2060,7 +2062,7 @@
         </led>
         <led id="Pad7H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222712" color-type="1"/>
           </display>
           <controller>18</controller>
           <channel>0</channel>
@@ -2070,7 +2072,7 @@
         </led>
         <led id="Pad7S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>18</controller>
           <channel>1</channel>
@@ -2080,7 +2082,7 @@
         </led>
         <led id="Pad7B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>18</controller>
           <channel>2</channel>
@@ -2090,7 +2092,7 @@
         </led>
         <led id="Pad8H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222592" color-type="1"/>
           </display>
           <controller>19</controller>
           <channel>0</channel>
@@ -2100,7 +2102,7 @@
         </led>
         <led id="Pad8S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>19</controller>
           <channel>1</channel>
@@ -2110,7 +2112,7 @@
         </led>
         <led id="Pad8B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>19</controller>
           <channel>2</channel>
@@ -2120,7 +2122,7 @@
         </led>
         <led id="Pad9H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="1" color-off="4286513152" color-on="4286541312" color-type="1"/>
           </display>
           <controller>20</controller>
           <channel>0</channel>
@@ -2150,7 +2152,7 @@
         </led>
         <led id="Pad10H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222712" color-type="1"/>
           </display>
           <controller>21</controller>
           <channel>0</channel>
@@ -2160,7 +2162,7 @@
         </led>
         <led id="Pad10S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>21</controller>
           <channel>1</channel>
@@ -2170,7 +2172,7 @@
         </led>
         <led id="Pad10B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>21</controller>
           <channel>2</channel>
@@ -2180,7 +2182,7 @@
         </led>
         <led id="Pad11H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222712" color-type="1"/>
           </display>
           <controller>22</controller>
           <channel>0</channel>
@@ -2190,7 +2192,7 @@
         </led>
         <led id="Pad11S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>22</controller>
           <channel>1</channel>
@@ -2200,7 +2202,7 @@
         </led>
         <led id="Pad11B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>22</controller>
           <channel>2</channel>
@@ -2240,7 +2242,7 @@
         </led>
         <led id="Pad13H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="1" color-off="4286532096" color-on="4286513152" color-type="1"/>
           </display>
           <controller>24</controller>
           <channel>0</channel>
@@ -2270,7 +2272,7 @@
         </led>
         <led id="Pad14H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222712" color-type="1"/>
           </display>
           <controller>25</controller>
           <channel>0</channel>
@@ -2280,7 +2282,7 @@
         </led>
         <led id="Pad14S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>25</controller>
           <channel>1</channel>
@@ -2290,7 +2292,7 @@
         </led>
         <led id="Pad14B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>25</controller>
           <channel>2</channel>
@@ -2300,7 +2302,7 @@
         </led>
         <led id="Pad15H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4278222712" color-type="1"/>
           </display>
           <controller>26</controller>
           <channel>0</channel>
@@ -2310,7 +2312,7 @@
         </led>
         <led id="Pad15S">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>26</controller>
           <channel>1</channel>
@@ -2320,7 +2322,7 @@
         </led>
         <led id="Pad15B">
           <display type="0">
-            <unit color-mode="1" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
           </display>
           <controller>26</controller>
           <channel>2</channel>
@@ -2330,7 +2332,7 @@
         </led>
         <led id="Pad16H">
           <display type="0">
-            <unit color-mode="1" color-off="4286532096" color-on="4278205567" color-type="1"/>
+            <unit color-mode="1" color-off="4286532096" color-on="4286513152" color-type="1"/>
           </display>
           <controller>27</controller>
           <channel>0</channel>
@@ -3097,7 +3099,7 @@
           <default>0</default>
         </led>
       </group>
-      <group color="4278205567" name="Pad Page B">
+      <group color="4286513162" name="Pad Page B">
         <pad id="Pad1" subtype="trigger">
           <note>12</note>
           <channel>3</channel>
@@ -4573,7 +4575,7 @@
           <default>0</default>
         </led>
       </group>
-      <group color="4278205567" name="Pad Page B">
+      <group color="4286516224" name="Pad Page B">
         <pad id="Pad1" subtype="trigger">
           <note>12</note>
           <channel>5</channel>
@@ -4644,7 +4646,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior>gate</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure5" subtype="pressure">
@@ -4660,7 +4662,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior>gate</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure6" subtype="pressure">
@@ -4676,7 +4678,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior>gate</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure7" subtype="pressure">
@@ -4692,7 +4694,7 @@
           <min>0</min>
           <max>127</max>
           <default>0</default>
-          <behavior>gate</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </pad>
         <pad id="Pressure8" subtype="pressure">
@@ -4832,7 +4834,7 @@
         </pad>
         <led id="Pad1H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4283826303" color-type="1"/>
           </display>
           <controller>12</controller>
           <channel>0</channel>
@@ -4862,7 +4864,7 @@
         </led>
         <led id="Pad2H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286513214" color-type="1"/>
           </display>
           <controller>13</controller>
           <channel>0</channel>
@@ -4892,7 +4894,7 @@
         </led>
         <led id="Pad3H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4283826303" color-type="1"/>
           </display>
           <controller>14</controller>
           <channel>0</channel>
@@ -4922,7 +4924,7 @@
         </led>
         <led id="Pad4H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286513214" color-type="1"/>
           </display>
           <controller>15</controller>
           <channel>0</channel>
@@ -4952,7 +4954,7 @@
         </led>
         <led id="Pad5H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286525440" color-type="1"/>
           </display>
           <controller>16</controller>
           <channel>0</channel>
@@ -4982,7 +4984,7 @@
         </led>
         <led id="Pad6H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286525440" color-type="1"/>
           </display>
           <controller>17</controller>
           <channel>0</channel>
@@ -5012,7 +5014,7 @@
         </led>
         <led id="Pad7H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286525440" color-type="1"/>
           </display>
           <controller>18</controller>
           <channel>0</channel>
@@ -5042,7 +5044,7 @@
         </led>
         <led id="Pad8H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286532096" color-on="4286525440" color-type="1"/>
           </display>
           <controller>19</controller>
           <channel>0</channel>
@@ -5072,7 +5074,7 @@
         </led>
         <led id="Pad9H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>20</controller>
           <channel>0</channel>
@@ -5102,7 +5104,7 @@
         </led>
         <led id="Pad10H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>21</controller>
           <channel>0</channel>
@@ -5132,7 +5134,7 @@
         </led>
         <led id="Pad11H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>22</controller>
           <channel>0</channel>
@@ -5162,7 +5164,7 @@
         </led>
         <led id="Pad12H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>23</controller>
           <channel>0</channel>
@@ -5192,7 +5194,7 @@
         </led>
         <led id="Pad13H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>24</controller>
           <channel>0</channel>
@@ -5222,7 +5224,7 @@
         </led>
         <led id="Pad14H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>25</controller>
           <channel>0</channel>
@@ -5252,7 +5254,7 @@
         </led>
         <led id="Pad15H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>26</controller>
           <channel>0</channel>
@@ -5282,7 +5284,7 @@
         </led>
         <led id="Pad16H">
           <display type="0">
-            <unit color-mode="0" color-off="4286516224" color-on="4286525440" color-type="1"/>
+            <unit color-mode="0" color-off="4286516224" color-on="4286516224" color-type="1"/>
           </display>
           <controller>27</controller>
           <channel>0</channel>
@@ -6049,7 +6051,7 @@
           <default>0</default>
         </led>
       </group>
-      <group color="4278205567" name="CUE 1-8">
+      <group color="4286513182" name="CUE 1-8">
         <pad id="Pad1" subtype="trigger">
           <note>12</note>
           <channel>1</channel>
