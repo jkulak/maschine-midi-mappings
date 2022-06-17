@@ -64,19 +64,21 @@
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Erase">
+        <name>B PLAY</name>
         <controller>110</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">gate</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Grid">
+        <name>B MASTER</name>
         <controller>107</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">trigger</behavior>
+        <behavior>trigger</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="GroupA">
@@ -436,7 +438,7 @@
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">toggle</behavior>
+        <behavior onIfDown="on">gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Play">
@@ -444,7 +446,7 @@
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">toggle</behavior>
+        <behavior onIfDown="on">gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Push">
@@ -456,19 +458,21 @@
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Rec">
+        <name>A PLAY</name>
         <controller>109</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">gate</behavior>
+        <behavior>gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Restart">
+        <name>A MASTER</name>
         <controller>104</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">trigger</behavior>
+        <behavior>trigger</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Sampling">
@@ -484,7 +488,7 @@
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">toggle</behavior>
+        <behavior onIfDown="on">gate</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Select">
@@ -512,19 +516,21 @@
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="StepL">
+        <name>A SYNC</name>
         <controller>105</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">trigger</behavior>
+        <behavior>trigger</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="StepR">
+        <name>B SYNC</name>
         <controller>106</controller>
         <channel>0</channel>
         <off>0</off>
         <on>127</on>
-        <behavior onIfDown="on">trigger</behavior>
+        <behavior>trigger</behavior>
         <reaction>ondown</reaction>
       </button>
       <button version="1" id="Swing">
@@ -553,10 +559,10 @@
       </button>
     </controls>
     <pages>
-      <current_index>3</current_index>
+      <current_index>0</current_index>
       <page name="Main">
         <button version="1" id="Button1">
-          <name>fx1 on</name>
+          <name>key</name>
           <controller>46</controller>
           <channel>0</channel>
           <off>0</off>
@@ -565,6 +571,7 @@
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button2">
+          <name>Ch FX</name>
           <controller>47</controller>
           <channel>0</channel>
           <off>0</off>
@@ -589,7 +596,7 @@
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button5">
-          <name>fx2 on</name>
+          <name>key</name>
           <controller>50</controller>
           <channel>0</channel>
           <off>0</off>
@@ -598,6 +605,7 @@
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button6">
+          <name>ch fx</name>
           <controller>51</controller>
           <channel>0</channel>
           <off>0</off>
@@ -622,91 +630,97 @@
           <reaction>ondown</reaction>
         </button>
         <knob version="1" id="Knob1">
-          <name>dry/wet</name>
+          <name>key</name>
           <controller>14</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob2">
+          <name>ch fx</name>
           <controller>15</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob3">
+          <name>fx sel</name>
           <controller>16</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob4">
+          <name>seek</name>
           <controller>17</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob5">
-          <name>dry/wet</name>
+          <name>key</name>
           <controller>18</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob6">
+          <name>ch fx</name>
           <controller>19</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob7">
+          <name>fx sel</name>
           <controller>20</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob8">
+          <name>seek</name>
           <controller>21</controller>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
       </page>
       <page name="FX">
         <button version="1" id="Button1">
-          <name>fx1</name>
+          <name>fx1 on</name>
           <controller>54</controller>
           <channel>0</channel>
           <off>0</off>
@@ -715,16 +729,16 @@
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button2">
-          <name>btn1</name>
+          <name>reset</name>
           <controller>55</controller>
           <channel>0</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button3">
-          <name>bth2</name>
+          <name>btn2</name>
           <controller>56</controller>
           <channel>0</channel>
           <off>0</off>
@@ -742,7 +756,7 @@
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button5">
-          <name>fx2</name>
+          <name>fx2 on</name>
           <controller>58</controller>
           <channel>0</channel>
           <off>0</off>
@@ -751,12 +765,12 @@
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button6">
-          <name>btn1</name>
+          <name>reset</name>
           <controller>59</controller>
           <channel>0</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button7">
@@ -868,148 +882,166 @@
       </page>
       <page name="EQ">
         <button version="1" id="Button1">
+          <name>hi kill</name>
           <controller>62</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button2">
+          <name>mid kill</name>
           <controller>63</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button3">
+          <name>low kill</name>
           <controller>64</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button4">
+          <name>reset</name>
           <controller>65</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button5">
+          <name>hi kill</name>
           <controller>66</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button6">
+          <name>mid kill</name>
           <controller>67</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button7">
+          <name>low kill</name>
           <controller>68</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <button version="1" id="Button8">
+          <name>reset</name>
           <controller>69</controller>
           <channel>2</channel>
           <off>0</off>
           <on>127</on>
-          <behavior onIfDown="on">toggle</behavior>
+          <behavior onIfDown="on">gate</behavior>
           <reaction>ondown</reaction>
         </button>
         <knob version="1" id="Knob1">
+          <name>hi</name>
           <controller>30</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
-          <steps>20</steps>
-          <bipolar>off</bipolar>
+          <steps>100</steps>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob2">
+          <name>mid</name>
           <controller>31</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob3">
+          <name>low</name>
           <controller>32</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob4">
+          <name> </name>
+          <disabled />
           <controller>33</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob5">
+          <name>hi</name>
           <controller>34</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob6">
+          <name>mid</name>
           <controller>35</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob7">
+          <name>low</name>
           <controller>36</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
         <knob version="1" id="Knob8">
+          <name> </name>
+          <disabled />
           <controller>37</controller>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
-          <default>0</default>
+          <default>64</default>
           <range>360</range>
           <steps>20</steps>
-          <bipolar>off</bipolar>
+          <bipolar>on</bipolar>
         </knob>
       </page>
       <page name="Clean 4">
@@ -1160,7 +1192,7 @@
       </page>
     </pages>
     <groups>
-      <current_index>0</current_index>
+      <current_index>4</current_index>
       <group name="Main" color-index="9">
         <pad subtype="trigger" version="1" id="Pad1">
           <note>12</note>
@@ -3005,7 +3037,7 @@
           <default>0</default>
         </led>
         <pad subtype="trigger" version="1" id="Pad2">
-          <note>1</note>
+          <note>13</note>
           <channel>2</channel>
           <min>0</min>
           <max>127</max>
@@ -3017,7 +3049,7 @@
           <display type="0">
             <unit color-type="1" color-mode="0" color-on-index="2" color-off-index="1" />
           </display>
-          <note>1</note>
+          <note>13</note>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
@@ -3027,7 +3059,7 @@
           <display type="0">
             <unit color-type="1" color-mode="0" color-on-index="13" color-off-index="1" />
           </display>
-          <note>1</note>
+          <note>13</note>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
@@ -3037,7 +3069,7 @@
           <display type="0">
             <unit color-type="1" color-mode="0" color-on-index="2" color-off-index="1" />
           </display>
-          <note>1</note>
+          <note>13</note>
           <channel>0</channel>
           <min>0</min>
           <max>127</max>
@@ -3124,7 +3156,7 @@
         <pad subtype="trigger" version="1" id="Pad5">
           <note>16</note>
           <channel>2</channel>
-          <min>127</min>
+          <min>0</min>
           <max>127</max>
           <default>0</default>
           <behavior onIfDown="on">gate</behavior>
@@ -3896,7 +3928,7 @@
         <pad subtype="trigger" version="1" id="Pad5">
           <note>16</note>
           <channel>3</channel>
-          <min>127</min>
+          <min>0</min>
           <max>127</max>
           <default>0</default>
           <behavior onIfDown="on">gate</behavior>
@@ -4188,15 +4220,13 @@
           <reaction>ondown</reaction>
         </pad>
         <pad subtype="pressure" version="1" id="Pressure5">
-          <note>16</note>
+          <polyat>16</polyat>
           <channel>0</channel>
           <min>126</min>
           <max>127</max>
           <default>0</default>
           <behavior onIfDown="on">toggle</behavior>
           <reaction>ondown</reaction>
-          <note-on-pressure>10</note-on-pressure>
-          <note-off-pressure>0</note-off-pressure>
         </pad>
         <pad subtype="pressure" version="1" id="Pressure6">
           <polyat>17</polyat>
